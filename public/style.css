@@ -1,0 +1,1147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.fullcontainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2596be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+#loginform{
+    width: 500px;
+        height: 500px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid white;
+        background-color:  rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        font-size: 30px;
+        Font-family: 'Press Start 2P', cursive;
+        color: white; 
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+}
+
+
+#loginform h1{
+
+margin-bottom: 20px;
+
+}
+.login-input{
+    height: 40px;
+    width: 200px;
+    border: white;
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+
+.login-buttons{
+    background-color: rgba(0, 0, 0, 0.3); 
+    margin-bottom: 40px; 
+    height: 40px;
+    width: 150px;
+    border: solid white 2px;
+    z-index: 3;
+    color: white;
+    font-size: 20px;
+    Font-family: 'Press Start 2P', cursive;
+    transition: all 0.3s ease; 
+    z-index: 99999999;
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex-direction: row; 
+    top: 20%;
+    left: 77%;
+    }
+    
+    
+.login-buttons:hover{
+background-color: white;
+color: black;
+width: 180px;
+border: black 2px solid;
+
+       
+}
+
+#registertext{
+    font-size: 20px;
+}
+
+#registerform h1{
+
+    margin-bottom: 20px;
+    
+    }
+
+#registerform{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    background-color:  rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    font-size: 30px;
+    Font-family: 'Press Start 2P', cursive;
+    color: white; 
+    text-align: center; 
+    display: none; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+
+.diagonal3{
+    position: fixed; 
+    bottom: 0;      
+    left: 0;        
+    width: 100%;   
+    height: 45vh;  
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    overflow: hidden;
+    z-index: 0;
+    display: block;
+}
+.diagonal3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        -45deg, 
+        rgba(255, 255, 255, 0.1), 
+        #2596be 5px,
+        #2596be 10px,
+        #2596be 20px);
+    animation: move-stripes 15s linear infinite;
+}
+
+@keyframes move-stripes {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+.error {
+    color: red;
+    font-size: 0.7em;
+}
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #2596be;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainmenu {
+    width: 100%;
+    height: 100%;
+    background-color: #2596be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+#logo{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 850px;
+    top: -70px;
+    animation: hoverAnimation 2s ease-in-out infinite;
+}
+
+
+@keyframes hoverAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Move the logo up by 10px */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+.buttoncase{
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+
+    position: absolute;
+    left: 960px;
+    top: 270px;
+}
+
+.buttons {
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin-bottom: 20px; 
+    height: 60px;
+    width: 200px;
+    position: relative;
+    border: solid white 2px;
+    z-index: 3;
+    color: white;
+    font-size: 20px;
+    Font-family: 'Press Start 2P', cursive;
+    transition: all 0.3s ease; 
+}
+
+.buttons:hover{
+    background-color: white;
+    color: black;
+    width: 250px;
+    border: black 2px solid;
+    transform: translateX(-25px);
+   
+}
+
+.diagonal{
+    position: fixed; 
+    bottom: 0;      
+    left: 0;        
+    width: 100%;   
+    height: 45vh;  
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+.diagonal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        -45deg, 
+        rgba(255, 255, 255, 0.1), 
+        #2596be 5px,
+        #2596be 10px,
+        #2596be 20px);
+    animation: move-stripes 15s linear infinite;
+}
+
+@keyframes move-stripes {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+
+
+#muteToggle {
+    position: fixed;
+    background-image: url('images/unmute.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 20%;
+    height: 30px;
+    width: 40px;
+    top: 1%;
+    left: 95%;
+    z-index: 99999;
+}
+
+.factcontainer{
+    width: 100%;
+    height: 50vh;
+    background-color:  #2596be;
+    align-items: center;
+    justify-content: center;
+}
+.hintcontainer{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.7);  ;
+    border: 2px white solid;
+    border-top: 5px white solid;
+    z-index: 999;
+    position:fixed; 
+    overflow-y: auto; 
+    color: white;
+    text-align: center;
+    
+}
+
+.gamecontainers{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+    background-color:#2596be;
+    z-index: 0;
+}
+
+#leveltext{
+    Font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: white; /* Text color */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    
+}
+
+#textbg{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 40px; 
+    position: absolute;
+    top: 10px;
+    text-align: center;
+}
+.diagonal2{
+    position: fixed; 
+    bottom: 0;      
+    left: 0;        
+    width: 100%;   
+    height: 45vh;  
+    background-color: black;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    display: block;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.diagonal2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        -45deg, 
+        rgba(255, 255, 255, 0.1), 
+        #2596be 5px,
+        #2596be 10px,
+        #2596be 20px);
+    animation: move-stripes 15s linear infinite;
+}
+
+.heartcont{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    
+    }
+
+.heart{
+        width: 40px;
+        height: auto; 
+        margin-right: 5px; 
+        display: inline-block;
+        visibility: visible; 
+    }
+
+
+    @keyframes explode {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(2);
+            opacity: 0;
+        }
+    }
+.containerofinputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.inputcont{
+    margin-right: 3px;
+ 
+}
+
+   
+.inputcont input {
+   width: 25px;
+   height: 35px;
+   margin-right: 5px; 
+   font-size: 25px;
+   text-align: center;
+   background-color:transparent ;
+   border: none;
+   border-bottom: 2px solid white;
+   color: white;
+   outline: none; 
+}
+
+.space{
+    width: 10px;
+    height: 10px;
+    margin-right: 20px; 
+    background-color:transparent ;
+    border: none;
+   
+}
+
+
+.hintwords{
+    border-bottom: 3px solid white;
+}
+
+.hintwords span{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.eachhintword{
+    margin: 0px;
+}
+
+.hintwords input {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; 
+    font-size: 20px;
+    text-align: center;
+    background-color:transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+    
+.hintwords input:focus {
+    outline: none; 
+}
+     
+.hintwords {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+.jumping {
+    animation: jumpAnimation 0.5s;
+}
+
+@keyframes jumpAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.success{
+    width: 60%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    z-index: 999;
+    position: fixed;
+    overflow-y: auto;
+    color: white;
+    text-align: center;
+    display: none; 
+    border-radius: 5%;
+    Font-family: 'Press Start 2P', cursive;
+}
+
+
+
+
+.SuccessPhrase{
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    margin: 0 auto; 
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.explanationbox{
+
+    width: 80%;
+    height: 40%;
+    font-size: 20px; 
+    margin: 0 auto; 
+    border: 2px white solid;
+    border-top: 5px white solid;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.nextlevel{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin: 0 auto; 
+    margin-top: 3%;
+    background-color: rgba(37, 150, 190, 0.5);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    Font-family: 'Press Start 2P', cursive;
+     color: white; 
+
+}
+
+.nextlevel:hover{
+    font-size: 30px;
+    width: 300px;
+    height: 80px;
+}
+
+#bodydiags{
+    display: none;
+}
+
+
+.unclickable2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9998; 
+}
+
+
+#gameover{
+    
+        width: 500px;
+        height: 500px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid white;
+        background-color:  rgba(0, 0, 0, 0.3);
+        justify-content: center;
+        font-size: 30px;
+        Font-family: 'Press Start 2P', cursive;
+        color: red; 
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+}
+
+
+
+#startagane{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 60px;
+    background-color: rgba(37, 150, 190, 0.5);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    Font-family: 'Press Start 2P', cursive;
+     color: white; 
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menubtn{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 60px;
+    background-color: rgba(37, 150, 190, 0.5);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    Font-family: 'Press Start 2P', cursive;
+     color: white; 
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#menubtn:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1); 
+    font-size: 25px;
+    width: 140px;
+    height: 70px;
+    cursor: pointer;
+}
+#startagane:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1); 
+    font-size: 25px;
+    cursor: pointer;
+    width: 140px;
+    height: 70px;
+}
+
+#lostpic{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 40%;
+    opacity: .8;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.gameend{
+    display: block;
+    z-index: 9999; 
+    width: 60%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    position: absolute;
+    overflow-y: auto;
+    color: white;
+    text-align: center;
+    border-radius: 5%;
+    Font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    
+
+}
+
+#successpic{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 40%;
+    opacity: .8;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menubtn2{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 60px;
+    background-color: rgba(37, 150, 190, 0.5);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    Font-family: 'Press Start 2P', cursive;
+     color: white; 
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menubtn2:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1); 
+    font-size: 25px;
+    width: 140px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.unclickable1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9998; 
+   
+}
+
+
+.leaderboardcont{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    overflow: hidden;
+    z-index: 999999999;
+}
+
+.buttons2{
+background-color: rgba(0, 0, 0, 0.5); 
+margin-bottom: 40px; 
+height: 80px;
+width: 250px;
+position: relative;
+border: solid white 2px;
+z-index: 3;
+color: white;
+font-size: 20px;
+Font-family: 'Press Start 2P', cursive;
+transition: all 0.3s ease; 
+z-index: 99999999;
+display: flex; /* Add flex display */
+text-align: center;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+user-select: none;
+
+flex-direction: column; /* Display in column */
+top: 20%;
+left: 77%;
+}
+
+
+.buttons2:hover{
+    background-color: white;
+    color: black;
+    width: 280px;
+    border: black 2px solid;
+    transform: translateX(-25px);
+   
+}
+
+.top10 {
+    width: 280px;
+    height: 90px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid #095e80 4px;
+    border-top: solid #095e80 2px;
+    border-right: solid #095e80 2px;
+    border-bottom: solid #095e80 3px;
+    color: white;
+   
+   
+   
+}
+
+#top1{
+    top: 10%;
+    left: 25%;
+    border-color: gold;
+}
+#top2{
+    top: 28%;
+    left: 25%;
+    border-color: silver;
+}
+#top3{
+    top: 44%;
+    left: 25%;
+    border-color: brown;
+}
+#top4{
+    top: 62%;
+    left: 25%;
+}
+#top5{
+    top: 80%;
+    left: 25%;
+}
+#top6{
+    top: 10%;
+    left: 50%;
+}
+#top7{
+    top: 28%;
+    left: 50%;
+}
+#top8{
+    top: 44%;;
+    left: 50%;
+}
+#top9{
+    top: 62%;
+    left: 50%;
+}
+#top10{
+    top: 80%;
+    left: 50%;
+}
+
+.leadname{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    font-size: 30px;
+    color: yellow;
+}
+.breaklead{
+   line-height: 0.2;
+}
+
+.rank{
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    font-size: 25px;
+  
+}
+.ranknum{
+    font-family: 'PixelFont', sans-serif;
+    position: absolute;
+    left: 85%;
+    top: 34%;
+    font-size: 50px;
+    color: yellow;
+    font-weight: 100;
+}
+.time{
+    left: 3%;
+    position: absolute;
+    top: 90%;
+    font-size: 20px;
+
+}
+
+.leadtitle{
+    position: absolute;
+    left: 76%;
+    top: 5%;
+    Font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: white; /* Text color */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    
+}
+
+.leadtitle2{
+    position: absolute;
+    left: 48%;
+    top: 4%;
+    transform: translate(-50%, -50%);
+    Font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: white; /* Text color */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    
+}
+
+#leadbg{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: -3%;
+    top: 10%;
+    opacity: .3;
+}
+
+
+#menurobot{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 17%;
+    top: 23%;
+    opacity: .5;
+    z-index: 99;
+    animation: hoverAnimation 5s ease-in-out infinite;
+    display: none;
+}
+
+
+
+.textbox{
+    
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    background-color:  rgba(0, 0, 0, .5);
+    justify-content: center;
+    font-size: 30px;
+    Font-family: 'Press Start 2P', cursive;
+    color: wheat; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;   
+    z-index: 40;
+    Font-family: 'Press Start 2P', cursive;
+}
+
+#messageInput{
+    position: absolute;
+    top: 92%;
+    left: 0%;
+    width: 80%;
+    height: 8%;
+    Font-family: 'Press Start 2P', cursive;
+    font-size: .5em;
+    border: brown 2px solid;
+}
+#sendButton{
+    position: absolute;
+    top: 92%;
+    left: 80%;
+    width: 20%;
+    height: 8%;
+    Font-family: 'Press Start 2P', cursive;
+    font-size: .5em;
+    color: white;
+    background-color:#095e80  ;
+}
+
+
+#messages{
+    width: 95%;
+    height: 75%;
+    overflow-y: auto; 
+    text-align: left;
+    font-size: 0.7em;
+}
+
+.gamemodecont{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamebtn:hover{
+background-color: white;
+color: black;
+width: 17%;
+border: black 2px solid;
+}
+
+
+
+
+#goback{
+    width: 13%;
+    height: 13%;
+    font-size: 1.5em;
+    background-color:  rgba(0, 0, 0, .8);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    Font-family: 'Press Start 2P', cursive;
+     color: white; 
+     position: absolute;
+     top: 40%;
+     z-index: 999;
+
+    display: none;
+    position: absolute;
+    left: 90%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+#goback:hover{
+    background-color: white;
+    color: black;
+    width: 15%;
+    border: black 2px solid;
+    }
+
+
+#findtext{
+position: absolute;
+font-size: 3.5em;
+top: 20%;
+left: 70%;
+transform: translate(-50%, -50%);
+Font-family: 'Press Start 2P', cursive;
+color: white; 
+width: 80%;
+height: 10%;
+display: none;
+z-index: 999;
+
+}
+
+
+#loading{
+    position: absolute;
+    font-size: 3.5em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    display: none; 
+    z-index: 999;
+    opacity: .5;
+}
+
+.win{
+    width: 60%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    z-index: 999;
+    position: fixed;
+    overflow-y: auto;
+    color: white;
+    text-align: center;
+    display: none; 
+    border-radius: 5%;
+    Font-family: 'Press Start 2P', cursive;
+}
+
+.loss{
+    width: 60%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    z-index: 999;
+    position: fixed;
+    overflow-y: auto;
+    color: white;
+    text-align: center;
+    display: none; 
+    border-radius: 5%;
+    Font-family: 'Press Start 2P', cursive;
+}
+
+.resultbtn{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin: 0 auto; 
+    margin-top: 3%;
+    background-color: rgba(37, 150, 190, 0.5);
+    border: 2px white solid;
+    border-top: 5px white solid;
+    Font-family: 'Press Start 2P', cursive;
+     color: white;
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.resultbtn:hover{
+    font-size: 30px;
+    width: 300px;
+    height: 80px;
+}
+
+
+#profilebox{
+    width: 8%;
+    height: 16%;
+    border: white 4px solid;
+    position: absolute;
+    top:2%;
+    left: 1%;
+    overflow: hidden; /* Ensures the image does not overflow */
+}
+
+#profilebox img{
+    width: 99%; /* Make the image width 100% of the parent box */
+    height: auto;
+    display: block; /* Ensures the image behaves as a block element */
+
+
+
+}

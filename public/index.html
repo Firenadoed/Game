@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiggersIts</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<div class="fullcontainer" ">
+
+    <div class="diagonal3"></div>
+    <form action="/login" id="loginform" method="POST">
+        <h1>Login</h1>
+        <input type="text" class="login-input" placeholder="Username" name="username" required autocomplete="off">
+        
+      
+        <input type="password" class="login-input" placeholder="Password" name="password" required autocomplete="off">
+        <div id="loginError" class="error"></div>
+        <br>
+
+        <button type="submit" class="login-buttons" id="login">Login</button>
+        <h1 id="registertext">Dont have an Account?</h1>
+        <button type="button" class="login-buttons" id="registergoto" onclick="showregister()" ">Register</button>
+    </form>
+   
+
+
+
+        <form id="registerform" action="/register" method="POST"  ">
+
+            <h1>Register</h1>
+            <input type="text" class="login-input" placeholder="Username" name="username" required autocomplete="off">
+            <div id="usernameError" class="error"></div>
+        
+            <input type="password" class="login-input" placeholder="Password" name="password" required autocomplete="off">
+            <div id="passwordError" class="error"></div>
+            <br>
+
+            <button type="submit" class="login-buttons" id="register">Register</button>
+            <h1 id="registertext">Already have an account?</h1>
+            <button type="button" class="login-buttons" id="logingoto" onclick="showlogin()">Login</button>
+
+        </form>
+
+</div>
+
+<!-- <div id="profilebox">
+<img src="images/loser.jpg" alt="">
+</div> -->
+
+
+<button id="muteToggle" ></button>
+
+ 
+
+
+<div class="container" '>
+
+    <h1 id="findtext" class="findmatch">FINDING MATCH</h1>
+    <img id="loading" class="findmatch" src="images/loading.gif" alt="">
+    <button id="goback" onclick="mainmenus()">Go Back</button>
+
+
+    <div class="mainmenu">
+        
+      
+
+        <div class="textbox">
+            <label for="textbox">Global Chat</label>
+        <ul id="messages"></ul>
+        <input id="messageInput" autocomplete="off" /><button id="sendButton">Send</button>
+
+
+
+        </div>
+
+
+
+
+
+        <img id="menurobot" src="images/menurobot.gif" alt="">
+     
+        <div class="diagonal"></div>
+
+        <img id="logo" src="images/logo.png" alt="logo">
+       
+     
+        
+        <div class="buttoncase">
+            <button class="buttons" onclick="startgame()">Start</button>
+            <button class="buttons" onclick="findmatch()">Multiplayer</button>
+            <button class="buttons" onclick="showleaderboard()" >Leaderboard</button>
+            <button class="buttons" onclick="closetab()">Logout</button>
+            
+
+
+         </div>
+
+    
+    </div>
+    
+   
+
+
+<div class="gamecontainers">
+        <div class="factcontainer">
+            <div id="textbg">
+                <h1 id="leveltext"> Level: 1 </h1>
+               
+
+                    <div class="heartcont">
+                        <img src="images/heart.gif" alt="heart" class="heart">
+                        <img src="images/heart.gif"alt="heart" class="heart">
+                        <img src="images/heart.gif" alt="heart" class="heart">
+                        <img src="images/heart.gif" alt="heart" class="heart">
+                        <img src="images/heart.gif" alt="heart" class="heart">
+                        </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="diagonal2"></div>
+         <div class="hintcontainer"> 
+
+
+
+         </div>
+          
+ </div>
+
+
+    <div class="success">
+
+        <h1 class="SuccessPhrase"></h1>
+
+        <div class="explanationbox"></div>
+
+        <button class="nextlevel" onclick="startnext()">NEXT LEVEL</button>
+        
+
+    </div>
+
+
+    <div class="unclickable1">
+    <div class="gameend">
+        <h1 id="gratstext">Congrats</h1>
+
+        <img id="successpic" src="images/success.gif" alt="">
+        <button id="menubtn2" onclick="mainmenus()"> Main Menu </button>
+
+
+
+    </div>
+    </div>
+
+
+
+
+    <div class="unclickable2">
+        <div id="gameover">
+            <h1>Game Over</h1>
+            
+            <img id="lostpic" src="images/sad.jpg" alt="">
+            <button id="startagane" onclick="restart()"> Restart </button>
+            <button id="menubtn" onclick="mainmenus()"> Main Menu </button>
+        </div>
+        </div>
+
+
+
+        <div class="leaderboardcont">
+            <h1 class="leadtitle">LEADERBOARD</h1>
+            <h1 class="leadtitle2">-ALL TIME-</h1>
+
+
+            <img id="leadbg" src="images/background-ame.png" alt="">
+
+
+            <div class="top10" id="top1"></div>
+            <div class="top10" id="top2"></div>
+            <div class="top10" id="top3"></div>
+            <div class="top10" id="top4"></div>
+            <div class="top10" id="top5"></div>
+            <div class="top10" id="top6"></div>
+            <div class="top10" id="top7"></div>
+            <div class="top10" id="top8"></div>
+            <div class="top10" id="top9"></div>
+            <div class="top10" id="top10"></div>
+    
+            <div class="buttons2" id="databtn" onclick="changedata()">BEST TIME</div>
+            <button class="buttons2" onclick="mainmenus()">MAIN MENU</button>
+           
+    
+        </div>
+
+
+
+      
+
+        
+        <div class="win">
+
+            <h1 class="wintext">You Won!</h1>
+    
+            <button  class="resultbtn"  onclick="mainmenus()">Main Menu</button>
+            
+
+        </div>
+
+        <div class="loss">
+
+            <h1 class="lostext">You Lost!</h1>
+    
+            <button  class="resultbtn" onclick="mainmenus()">Main Menu</button>
+
+
+        </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="diagonal2" id="bodydiags"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<audio id="bgmusic" src="sounds/bgmusic.mp3" autoplay loop></audio>
+<script src="/socket.io/socket.io.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
